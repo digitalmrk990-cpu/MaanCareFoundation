@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    <link rel="icon" type="image/jpeg" href="logo.jpeg">
   <title>MANN CARE FOUNDATION – Empowering Lives</title>
-  <link rel="stylesheet" href="get-in-touch.css" />
+  <link rel="stylesheet" href="gallery.css" /> 
   <link rel="stylesheet" href="../style.css" />
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
@@ -89,7 +89,7 @@
 
   <!-- MEDIA DROPDOWN START -->
 <li class="dropdown">
-  <a href="../media/gallery.html">Media </a>
+  <a href="gallery.html">Media </a>
 </li>
 <!-- MEDIA DROPDOWN END -->
 
@@ -99,15 +99,15 @@
   <a href="#contact">Contact </a>
 
   <ul class="dropdown-menu">
-    <li><a href="get-in-touch.html">Get In Touch</a></li>
-    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="../contact/get-in-touch.html">Get In Touch</a></li>
+    <li><a href="./contact/privacy-policy.html">Privacy Policy</a></li>
   </ul>
 </li>
 <!-- CONTACT DROPDOWN END -->
 
 </ul>
 
-      <a href="../get-involved/donate-online.html" class="nav-donate">
+      <a href="donate-online.html" class="nav-donate">
         <i class="fas fa-heart"></i> Donate Now
       </a>
       <button class="burger" id="burger">&#9776;</button>
@@ -118,7 +118,7 @@
  <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
 
-   <a href="../index.html" onclick="closeMob()">Home</a>
+  <a href="../index.html" onclick="closeMob()">Home</a>
 
   <!-- About Us Dropdown -->
   <div class="mob-dropdown">
@@ -159,17 +159,17 @@
   </button>
 
   <div class="mob-drop-content">
-    <a href="../get-involved/individual-support.html" onclick="closeMob()">Individual Support</a>
-    <a href="../get-involved/corporate-partnership.html" onclick="closeMob()">Corporate Partnership</a>
-    <a href="../get-involved/donate-online.html" onclick="closeMob()">Donate Online</a>
-    <a href="../get-involved/career.html" onclick="closeMob()">Career</a>
+    <a href="individual-support.html" onclick="closeMob()">Individual Support</a>
+    <a href="corporate-partnership.html" onclick="closeMob()">Corporate Partnership</a>
+    <a href="donate-online.html" onclick="closeMob()">Donate Online</a>
+    <a href="career.html" onclick="closeMob()">Career</a>
   </div>
 </div>
 
 
  <!-- Media-->
 
-  <a href="../media/gallery.html" onclick="closeMob()">Media</a>
+  <a href="gallery.html" onclick="closeMob()">Media</a>
 
  <!-- Contact -->
 
@@ -179,8 +179,8 @@
   </button>
 
   <div class="mob-drop-content">
-    <a href="get-in-touch.html" onclick="closeMob()">Get In Touch</a>
-    <a href="privacy-policy.html" onclick="closeMob()">Privacy Policy</a>
+    <a href="../contact/get-in-touch.html" onclick="closeMob()">Get In Touch</a>
+    <a href="../contact/privacy-policy.html" onclick="closeMob()">Privacy Policy</a>
   </div>
 </div>
 
@@ -197,140 +197,195 @@
   <div class="mc-slide">
 
     <picture>
-      <source media="(max-width:768px)" srcset="images/mobile-slide1.jpeg">
-      <img src="images/hero1.jpeg" alt="Hero Image">
+      <source media="(max-width:768px)" srcset="images/mobile-slide4.jpeg">
+      <img src="images/hero4.jpeg" alt="Hero Image">
     </picture>
 
   </div>
 
 </section>
-<!-- ===== get-in-touch  ===== -->
 
+<!-- ============================================================
+     MEDIA GALLERY – SIRF 3 SECTIONS
+     Isko apne <body> me header ke baad paste karo.
+     CSS: <head> me ye line daalo →
+     <link rel="stylesheet" href="media-sections.css">
+     ============================================================ -->
 
+<main class="media-main">
 
+  <!-- ================= SECTION 1 : LYCHEE (4 photos) ================= -->
+  <section class="gallery-section">
+    <div class="section-head">
+      <span class="section-tag">🍒 Summer Refreshment Drive</span>
+      <h2>Lychee Distribution</h2>
+      <p>Spreading sweetness & nutrition — fresh lychees distributed with love to children and families in need.</p>
+      <div class="head-line"><span></span></div>
+    </div>
 
-
-
- 
-<!-- CONTACT CARDS -->
-
-<section class="contact-container">
-
-  <div class="card">
-    <i class="fa-solid fa-building"></i>
-    <h3>Registered Office</h3>
-    <p>1708, One World, S.V. Road</p>
-    <p>Near N.M. High School</p>
-    <p>Malad West, Mumbai – 400064</p>
-  </div>
-
-  <div class="card">
-    <i class="fa-solid fa-phone"></i>
-    <h3>Contact</h3>
-    <p><b>Phone:</b>+91 7039006300</p>
-    <p><b>Email:</b> manncarefoundation@gmail.com</p>
-    <!-- <p><b>Website:</b> www.manncarefoundation.org</p> -->
-  </div>
-
-  <div class="card">
-    <i class="fa-solid fa-share-nodes"></i>
-    <h3>Social Media</h3>
-    <p>Instagram: @Mann.Care.Foundation</p>
-    <p>Facebook: Mann Care Foundation</p>
-    <p>LinkedIn: Mann Care Foundation</p>
-  </div>
-
-</section>
-
-<!-- ABOUT -->
-
-<section class="about">
-  <h2>About Us</h2>
-  <p>
-    Mann Care Foundation is committed to empowering underprivileged and marginalized individuals through education, healthcare, livelihood support, skill development, and community welfare initiatives.
-  </p>
-  <p>
-    Our mission is to create opportunities, restore dignity, and build a more inclusive and compassionate society.
-  </p>
-</section>
-
-<!-- MAP -->
-
-<section class="map">
-  <h2>Find Us</h2>
-  <iframe 
-    src="https://www.google.com/maps?q=Malad%20West%20Mumbai&output=embed">
-  </iframe>
-</section>
-
-
-
-<!-- ===== CONTACT ===== -->
-  <section class="contact section" id="contact">
-    <div class="container">
-      <div class="section-tag">Get In Touch</div>
-      <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <div class="ci-card">
-            <div class="ci-icon"><i class="fas fa-location-dot"></i></div>
-            <div>
-              <strong>Address</strong>
-              <p>Office No. 1708, One World, S.V.Road, Near N. M. High School, Malad (West), Mumbai – 400064</p>
-            </div>
-          </div>
-          <div class="ci-card">
-            <div class="ci-icon"><i class="fas fa-phone"></i></div>
-            <div>
-              <strong>Phone</strong>
-              <p><a href="tel:+917039006300">+91 70390 06300</a><br/><a href="tel:+917039006400">+91 70390 06400</a></p>
-            </div>
-          </div>
-          <div class="ci-card">
-            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
-            <div>
-              <strong>Email</strong>
-              <p><a href="mailto:manncarefoundation@gmail.com">manncarefoundation@gmail.com</a><br/><a href="mailto:manncarefoundation@gmail.com">info.manncarefoundation@gmail.com</a></p>
-            </div>
-          </div>
-          <div class="ci-card">
-            <div class="ci-icon"><i class="fas fa-globe"></i></div>
-            <div>
-              <strong>Website</strong>
-              <p><a href="https://maancarefoundation.org" target="_blank">maancarefoundation.org</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="contact-form reveal">
-          <div class="cf-group">
-            <input type="text" placeholder="Your Full Name" class="cf-input"/>
-          </div>
-          <div class="cf-group">
-            <input type="email" placeholder="Email Address" class="cf-input"/>
-          </div>
-          <div class="cf-group">
-            <input type="tel" placeholder="Phone Number" class="cf-input"/>
-          </div>
-          <div class="cf-group">
-            <textarea placeholder="Your Message" class="cf-input" rows="4"></textarea>
-          </div>
-          <button class="cf-submit" onclick="submitForm(this)">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </div>
-      </div>
+    <div class="gallery-grid grid-4">
+      <!-- 👇 APNI IMAGES YAHAN ADD KARO (src badal do) -->
+      <figure class="g-item">
+        <img src="images/l1.jpg" alt="Lychee Distribution 1">
+        <figcaption><span>Lychee Distribution</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="images/l2.jpg" alt="Lychee Distribution 2">
+        <figcaption><span>Lychee Distribution</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="images/l3.jpg" alt="Lychee Distribution 3">
+        <figcaption><span>Lychee Distribution</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="images/l4.jpg" alt="Lychee Distribution 4">
+        <figcaption><span>Lychee Distribution</span></figcaption>
+      </figure>
     </div>
   </section>
 
+  <!-- ================= SECTION 2 : WATERMELON (5 photos) ================= -->
+  <section class="gallery-section alt">
+    <div class="section-head">
+      <span class="section-tag">🍉 Beat the Heat Initiative</span>
+      <h2>Watermelon Distribution</h2>
+      <p>Cool relief in the summer heat — juicy watermelons shared to keep our community hydrated & happy.</p>
+      <div class="head-line"><span></span></div>
+    </div>
+
+    <div class="gallery-grid grid-5">
+      <figure class="g-item">
+        <img src="images/w1.jpg" alt="Watermelon Distribution 1">
+        <figcaption><span>Watermelon Distribution</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="images/w2.jpg" alt="Watermelon Distribution 2">
+        <figcaption><span>Watermelon Distribution</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="images/w3.jpg" alt="Watermelon Distribution 3">
+        <figcaption><span>Watermelon Distribution</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="images/w4.jpg" alt="Watermelon Distribution 4">
+        <figcaption><span>Watermelon Distribution</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="images/w5.jpg" alt="Watermelon Distribution 5">
+        <figcaption><span>Watermelon Distribution</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3 : BUTTERMILK (6 photos) ================= -->
+  <section class="gallery-section">
+    <div class="section-head">
+      <span class="section-tag">🥛 Cool Sips of Care</span>
+      <h2>Buttermilk Distribution</h2>
+      <p>Refreshing glasses of chaas served with a smile — nourishing bodies and hearts alike.</p>
+      <div class="head-line"><span></span></div>
+    </div>
+
+    <div class="gallery-grid grid-6">
+      <figure class="g-item">
+        <img src="images/b1.jpg" alt="Buttermilk Distribution 1">
+        <figcaption><span>Buttermilk Distribution</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="images/b2.jpg" alt="Buttermilk Distribution 2">
+        <figcaption><span>Buttermilk Distribution</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="images/b3.jpg" alt="Buttermilk Distribution 3">
+        <figcaption><span>Buttermilk Distribution</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="images/b4.jpg" alt="Buttermilk Distribution 4">
+        <figcaption><span>Buttermilk Distribution</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="images/b5.jpg" alt="Buttermilk Distribution 5">
+        <figcaption><span>Buttermilk Distribution</span></figcaption>
+      </figure>
+      <figure class="g-item">
+        <img src="images/b6.jpg" alt="Buttermilk Distribution 6">
+        <figcaption><span>Buttermilk Distribution</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= LIGHTBOX (photo click pe badi khulti hai) ================= -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <img src="" alt="Preview" id="lbImg">
+</div>
+
+<!-- ================= SCRIPT  ================= -->
+<script>
+  // Lightbox
+  const lightbox = document.getElementById('lightbox');
+  const lbImg    = document.getElementById('lbImg');
+  document.querySelectorAll('.g-item img').forEach(img => {
+    img.addEventListener('click', () => {
+      lbImg.src = img.src;
+      lightbox.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  function closeLB(){
+    lightbox.classList.remove('show');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('lbClose').addEventListener('click', closeLB);
+  lightbox.addEventListener('click', e => { if(e.target === lightbox) closeLB(); });
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLB(); });
+
+  // Scroll reveal
+  const mediaObserver = new IntersectionObserver(entries => {
+    entries.forEach(en => { if(en.isIntersecting) en.target.classList.add('reveal'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.g-item, .section-head').forEach(el => mediaObserver.observe(el));
+</script>
 
 
 
 
 
-<!-- FOOTER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
+    
 
 <!-- ===== FOOTER ===== -->
 <section>
@@ -394,7 +449,9 @@
           <p>Empowering women and children from underprivileged communities through compassion, care, and action.</p>
           <div class="footer-socials">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/mann.care.foundation?igsh=Z2h3aGUxNGxnbW1u" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/mann.care.foundation?igsh=Z2h3aGUxNGxnbW1u" target="_blank"><i class="fab fa-instagram"></i></a>
+
+           
                 
             <a href="#"><i class="fab fa-youtube"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -432,13 +489,13 @@
         <div class="footer-links">
         <h5>Get Involved</h5>
 
-        <a href="../get-involved/individual-support.html">Individual Support</a>
-        <a href="../get-involved/corporate-partnership.html">Corporate Partnership</a>
-        <a href="../get-involved/donate-online.html">Donate Online</a>
-        <a href="../get-involved/career.html">Career</a>
+        <a href="individual-support.html">Individual Support</a>
+        <a href="corporate-partnership.html">Corporate Partnership</a>
+        <a href="donate-online.html">Donate Online</a>
+        <a href="career.html">Career</a>
         </div>
 
-           <!-- <div class="footer-links"> -->
+          <!-- <div class="footer-links"> -->
         <!-- <h5>Media</h5> -->
         <!--<a href="celebrity-events.html">Celebrity Events</a>
         <a href="press-related.html">Press Related</a>
@@ -447,8 +504,8 @@
 
          <div class="footer-links">
         <h5>Contact</h5>
-         <a href="get-in-touch.html">Get In Touch</a>
-          <a href="privacy-policy.html">Privacy Policy</a>
+         <a href="../contact/get-in-touch.html">Get In Touch</a>
+          <a href="../contact/privacy-policy.html">Privacy Policy</a>
        
         </div>
 
@@ -463,7 +520,7 @@
         <!-- GPay QR Section -->
         <div class="gpay-qr">
         <p><i class="fas fa-qrcode"></i> Scan & Pay via GPay</p>
-        <img src="gpay-qr.jpeg" alt="GPay QR Code" class="gpay-img">
+        <img src="images/gpay-qr.jpeg" alt="GPay QR Code" class="gpay-img">
         </div>
 
 
@@ -488,11 +545,10 @@
     </div>
   </div>
 
- <!-- WHATSAPP BUTTON -->
-
-<a class="whatsapp" href="https://wa.me/917039006300" target="_blank">
+ <a class="whatsapp" href="https://wa.me/917039006300" target="_blank">
   <i class="fa-brands fa-whatsapp"></i>
 </a>
+<script src="../main.js"></script>
 <script src="individual-support.js"></script>
 </body>
 </html>
