@@ -88,7 +88,7 @@
 
   <!-- MEDIA DROPDOWN START -->
 <li class="dropdown">
-  <a href="../media/gallery.html">Media </a>
+  <a href="media/gallery.html">Media </a>
 </li>
 <!-- MEDIA DROPDOWN END -->
 
@@ -167,7 +167,7 @@
 
  <!-- Media-->
 
-  <a href="../media/gallery.html" onclick="closeMob()">Media</a>
+  <a href="media/gallery.html" onclick="closeMob()">Media</a>
 
  <!-- Contact -->
 
@@ -371,7 +371,7 @@
     <div class="container">
       <div class="section-tag">What We Do</div>
       <h2 class="section-title">Our <span class="gradient-text">Projects</span></h2>
-      <p class="section-sub">Five transformative initiatives, one powerful mission — to uplift every life we touch.</p>
+      <!-- <p class="section-sub">Five transformative initiatives, one powerful mission — to uplift every life we touch.</p> -->
 
       <div class="projects-grid">
 
@@ -508,6 +508,100 @@
       </div>
     </div>
   </section>
+
+<!-- ===== OUR ACTIVITIES ===== -->
+<section class="activities section" id="activities">
+  <div class="container">
+    <h2 class="section-title">Our <span class="gradient-text">Activities</span></h2>
+    <!-- <p class="section-sub">Moments of compassion, action, and impact captured through our initiatives.</p> -->
+
+    <div class="activities-slider">
+      <div class="activities-track">
+        <figure class="activity-slide">
+          <img src="media/images/l1.jpg" alt="Litchi Distribution">
+          <figcaption>Litchi Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/w1.jpg" alt="Watermelon Distribution">
+          <figcaption>Watermelon Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/b1.JPG" alt="Buttermilk Distribution">
+          <figcaption>Buttermilk Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/snack1.jpeg" alt="Snack Distribution">
+          <figcaption>Snack Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/l2.jpg" alt="Litchi Distribution">
+          <figcaption>Litchi Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/w2.jpg" alt="Watermelon Distribution">
+          <figcaption>Watermelon Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/b2.JPG" alt="Buttermilk Distribution">
+          <figcaption>Buttermilk Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/snack2.jpeg" alt="Snack Distribution">
+          <figcaption>Snack Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/l3.jpg" alt="Litchi Distribution">
+          <figcaption>Litchi Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/w3.jpg" alt="Watermelon Distribution">
+          <figcaption>Watermelon Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/b3.JPG" alt="Buttermilk Distribution">
+          <figcaption>Buttermilk Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/snack3.jpeg" alt="Snack Distribution">
+          <figcaption>Snack Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/l4.jpg" alt="Litchi Distribution">
+          <figcaption>Litchi Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/w4.jpg" alt="Watermelon Distribution">
+          <figcaption>Watermelon Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/b4.JPG" alt="Buttermilk Distribution">
+          <figcaption>Buttermilk Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/snack4.jpeg" alt="Snack Distribution">
+          <figcaption>Snack Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/w5.jpg" alt="Watermelon Distribution">
+          <figcaption>Watermelon Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/b5.JPG" alt="Buttermilk Distribution">
+          <figcaption>Buttermilk Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/b6.JPG" alt="Buttermilk Distribution">
+          <figcaption>Buttermilk Distribution</figcaption>
+        </figure>
+        <figure class="activity-slide">
+          <img src="media/images/snack5.jpeg" alt="Snack Distribution">
+          <figcaption>Snack Distribution</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <!-- ===== GET INVOLVED ===== -->
 <section class="get-involved section" id="get-involved">
@@ -954,6 +1048,15 @@
 </a>
   <script src="main.js"></script>
   <script src="razorpay.js"></script>
+
+<script>
+(function(){
+  const track = document.querySelector('.activities-track');
+  if(!track) return;
+  const slides = Array.from(track.children);
+  slides.forEach(s => track.appendChild(s.cloneNode(true)));
+})();
+</script>
 </body>
 </html>
 <!-- <Shital> -->

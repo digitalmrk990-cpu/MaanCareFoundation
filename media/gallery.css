@@ -81,6 +81,16 @@
 .grid-5{ grid-template-columns:repeat(3, 1fr); }
 .grid-6{ grid-template-columns:repeat(3, 1fr); }
 
+/* Portrait-middle: 2 left, 1 center portrait (2 rows), 2 right */
+.grid-portrait-mid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-portrait-mid .g-item:nth-child(1) { grid-column: 1; grid-row: 1; }
+.grid-portrait-mid .g-item:nth-child(2) { grid-column: 1; grid-row: 2; }
+.grid-portrait-mid .g-item:nth-child(3) { grid-column: 2; grid-row: 1 / span 2; height: 560px; aspect-ratio: auto; }
+.grid-portrait-mid .g-item:nth-child(4) { grid-column: 3; grid-row: 1; }
+.grid-portrait-mid .g-item:nth-child(5) { grid-column: 3; grid-row: 2; }
+
 /* 5 photos → upar 2 badi, neeche 3 */
 @media (min-width: 861px){
   .grid-5{ grid-template-columns:repeat(6, 1fr); }
@@ -240,12 +250,14 @@
   .grid-4{ grid-template-columns:repeat(2, 1fr); }
 }
 @media (max-width: 860px){
-  .grid-5, .grid-6{ grid-template-columns:repeat(2, 1fr); }
+  .grid-5, .grid-6, .grid-portrait-mid{ grid-template-columns:repeat(2, 1fr); }
+  .grid-portrait-mid .g-item:nth-child(3){ grid-column:auto; grid-row:auto; aspect-ratio:4/3; }
   .section-head h2{ font-size:1.9rem; }
   .g-item figcaption span{ font-size:1rem; }
 }
 @media (max-width: 520px){
-  .grid-4, .grid-5, .grid-6{ grid-template-columns:1fr; }
+  .grid-4, .grid-5, .grid-6, .grid-portrait-mid{ grid-template-columns:1fr; }
+  .grid-portrait-mid .g-item:nth-child(3){ aspect-ratio:16/11; }
   .g-item{ aspect-ratio:16/11; }
 }
 
