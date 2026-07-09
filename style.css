@@ -618,7 +618,7 @@ background: linear-gradient(
 @keyframes bounce { 0%,100%{transform:translateY(0);} 50%{transform:translateY(8px);} }
 
 /* -------- SECTION COMMONS -------- */
-.section { padding: 100px 24px; position: relative; }
+.section { padding: 20px 24px; position: relative; }
 .container { max-width: 1000px; margin: 0 auto; }
 .section-tag {
   display: inline-block;
@@ -895,7 +895,7 @@ background: linear-gradient(
 
 .get-involved{
   background: linear-gradient(135deg, var(--pink-pale), var(--white));
-  padding: 100px 0;
+  padding: 30px 0;
 }
 
 .get-involved-content{
@@ -1725,6 +1725,66 @@ background: linear-gradient(
   background:#fff;
   color:var(--pink);
   font-weight:600;
+}
+
+/* ===== ACTIVITIES SLIDER ===== */
+.activities-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 10px 0;
+}
+
+.activities-track {
+  display: flex;
+  gap: 30px;
+  animation: scrollMarquee 30s linear infinite;
+}
+
+.activities-slider:hover .activities-track {
+  animation-play-state: paused;
+}
+
+@keyframes scrollMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.activity-slide {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 250px;
+  position: relative;
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.activity-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.activity-slide figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 6px 8px;
+  background: linear-gradient(transparent, rgba(233,30,140,0.9));
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .activity-slide figcaption { font-size: 0.75rem; padding: 8px 6px; }
+  .activities-track { border-radius: 16px; }
 }
 
 
